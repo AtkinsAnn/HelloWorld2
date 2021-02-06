@@ -7,7 +7,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1"> 
       <script>
           function showCongratulations(theButtonClicked){
-                    document.getElementbyId("result_display").innerHTML = 
+                    document.getElementById("result_display").innerHTML = 
                       "Congratulations, you did it! <p>You got the page to update!</p>"
           }
       </script>
@@ -16,7 +16,6 @@
   </head>
   <body>
     <button onclick="showCongratulations(this)">Click Me!</button>
-    <section id = "result_display">
-    </section>
+    <section id="result_display"></section>
   </body>
 </html>
