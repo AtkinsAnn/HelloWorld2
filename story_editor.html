@@ -15,6 +15,8 @@
             var storyName = document.getElementById("name_input").value
             var storyHTML = document.getElementById("story_editor").value
             localStorage.setItem(storyName,storyHTML)
+            var d = new Date();
+            document.getElementById("date_stamp").innerHTML = d;
           }
           function displayStory(){
             var storyHTML = document.getElementById("story_editor").value
@@ -46,5 +48,6 @@
     </section>
     <textarea id="story_editor" placeholder = "write a totally awesome story here."></textarea>
   <section id="story_display"></section>
+  <section id="date_stamp"></section>
   </body>
 </html>
