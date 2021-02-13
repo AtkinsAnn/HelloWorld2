@@ -16,7 +16,7 @@
             var storyHTML = document.getElementById("story_editor").value
             localStorage.setItem(storyName,storyHTML)
             var d = new Date();
-            document.getElementById("story_editor").innerHTML = d;
+            document.getElementById("story_editor").value = d;
           }
           function displayStory(){
             var storyHTML = document.getElementById("story_editor").value
