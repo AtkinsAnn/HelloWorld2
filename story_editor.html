@@ -12,9 +12,7 @@
             document.getElementById("story_editor").value = storyHTML <!--add story from local storage-->
           }
           function saveStory(){
-            var d = new Date();
-            document.getElementById("story_editor").value = d;
-            var storyName = d + document.getElementById("name_input").value
+            var storyName = document.getElementById("name_input").value
             var storyHTML = document.getElementById("story_editor").value
             localStorage.setItem(storyName,storyHTML)
           }
