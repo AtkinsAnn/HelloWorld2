@@ -14,7 +14,11 @@
           function saveStory(){
             var storyName = document.getElementById("name_input").value
             var storyHTML = document.getElementById("story_editor").value
-            localStorage.setItem(storyName,storyHTML)  
+              if{localStorage.setItem(storyName,storyHTML)
+                  document.getElementById("saved_status").innerHTML = "Story Saved Successfully"
+              }else{
+                  document.getElementById("saved_status").innerHTML = "Saving Error!"
+              }
           }
           function displayStory(){
             var storyHTML = document.getElementById("story_editor").value
@@ -43,6 +47,7 @@
       <button onclick="loadStory()">Find & Edit Story</button>
       <button onclick="saveStory()">Save Story</button>
       <button onclick="displayStory()">Display Story</button>
+      Saved Status: <p id="saved_status"></p>
     </section>
     <textarea id="story_editor" placeholder = "write a totally awesome story here."></textarea>
   <section id="story_display"></section>
