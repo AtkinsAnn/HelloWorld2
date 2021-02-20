@@ -8,8 +8,8 @@
       <script>
         function checkNumber(){
           var numberAsText = document.getElementById("number_input").value;
-          var remainder = numberAsText % 2;
           if(numberAsText != ""){
+            var remainder = numberAsText % 2;
               if(numberAsText != 0 && remainder == 0){
                 document.getElementById("result_display").innerHTML = numberAsText + " is even.";
               }else if(numberAsText != 0 && remainder == 1){
@@ -17,9 +17,12 @@
               }else{
                 document.getElementById("result_display").innerHTML = "0 is neither even nor odd.";
               }
-        }else{
+        }
+          else{
           document.getElementById("result_display").innerHTML = "Please enter a number.";
         }
+        }
+       
       </script>
       <style>
       </style>
