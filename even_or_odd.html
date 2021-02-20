@@ -9,13 +9,17 @@
         function checkNumber(){
           var numberAsText = document.getElementById("number_input").value;
           var remainder = numberAsText % 2;
-          if(numberAsText != 0 && remainder == 0){
-            document.getElementById("result_display").innerHTML = numberAsText + " is even.";
-          }else if(numberAsText != 0 && remainder == 1){
-            document.getElementById("result_display").innerHTML = numberAsText + " is odd";
-          }else{
-            document.getElementById("result_display").innerHTML = "0 is neither even nor odd.";
-          }
+          if(numberAsText != ""){
+              if(numberAsText != 0 && remainder == 0){
+                document.getElementById("result_display").innerHTML = numberAsText + " is even.";
+              }else if(numberAsText != 0 && remainder == 1){
+                document.getElementById("result_display").innerHTML = numberAsText + " is odd";
+              }else{
+                document.getElementById("result_display").innerHTML = "0 is neither even nor odd.";
+              }
+            }
+        }else{
+          document.getElementById("result_display").innerHTML = "Please enter a number.";
         }
       </script>
       <style>
