@@ -9,9 +9,9 @@
         function checkNumber(){
           var numberAsText = document.getElementById("number_input").value;
           var remainder = numberAsText % 2;
-          if(remainder == 0){
+          if(numberAsText != 0 && remainder == 0){
             document.getElementById("result_display").innerHTML = numberAsText + " is even.";
-          }else{
+          }else if(numberAsText != 0 && remainder == 1){
             document.getElementById("result_display").innerHTML = numberAsText + " is odd";
           }
         }
